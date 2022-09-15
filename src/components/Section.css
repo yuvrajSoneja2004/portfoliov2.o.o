@@ -1,0 +1,102 @@
+:root {
+    --txt-blk : #111111;
+}
+
+.sec-text {
+    color: #111111;
+    font-size: 10rem;
+    font-weight: 900;    
+    text-shadow: 2px 0 #111111;
+    letter-spacing:2px;
+    font-size: 12rem;
+    margin: 20px 150px;
+}
+.sec-text span {
+    color: #FFFFFF;
+    font-size: 10rem;
+    font-weight: 900;    
+    text-shadow: -2px 0 var(--txt-blk), 0 2px var(--txt-blk), 2px 0 var(--txt-blk), 0 -2px var(--txt-blk);
+    letter-spacing:2px;
+    font-size: 12rem;
+}
+.abt-me-txt-div {
+    display: flex;
+    margin: 60px;
+}
+.empty {
+    width: 600px;
+}
+.abt-me-txt {
+    font-size: 2rem;
+    max-width: 800px;
+}
+
+    /* RESPONSIVENESS  */
+
+    @media screen and (max-width: 966px) {
+        .sec-text {
+            font-size: 8rem;
+        }
+        .sec-text span {
+            font-size: 8rem
+        };
+        
+    }
+    
+    
+    @media screen and (max-width: 785px) {
+        .abt-me-txt {
+            font-size: 1.6rem;
+        }
+        
+    }
+
+    @media screen and (max-width: 750px) {
+        .sec-text {
+            font-size: 6rem;
+        }.sec-text span {
+            font-size: 6rem;
+        }
+        
+    } 
+    @media screen and (max-width: 642px) {
+        .sec-text {
+            font-size: 4rem;
+            margin: 20px 120px;
+        }.sec-text span {
+            font-size: 4rem;
+        }
+        
+    }
+
+    @media screen and (max-width: 473px) {
+        .sec-text {
+           /* margin: 20px 80px; */
+            width: 300px;
+            /* display: inline-block; */
+        
+        
+    }
+    .abt-me-txt-div {
+        flex-direction: column;
+        margin: 30px;
+    }
+    
+}  @media screen and (max-width: 423px) {
+        .sec-text {
+           margin: 0;
+           margin-left: 30px;
+           margin-top: 40px;
+        
+        
+    }
+     @media screen and (max-width: 330px) {
+        .sec-text {
+           margin: 0;
+           font-size: 2rem;
+        
+        
+    }
+    
+    
+     }}

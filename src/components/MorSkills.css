@@ -1,0 +1,138 @@
+.whole-morSkills {
+    padding: 70px 0;
+
+}
+.fullCen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  0 30px;
+}
+
+.cen-mor {
+    text-align: center;
+
+}
+.card-skl {
+    box-shadow: #111111 0px 4px 8px -2px, #111111 0px 0px 0px 1px;
+    border-radius: 20px;
+
+}
+.cen-skl-card:hover {
+    background: #111111f6;
+    
+}
+.cen-skl-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0px;
+    /* border-bottom: 10px solid transparent; */
+    border-left: 4px solid transparent;
+    transition: .4s;
+}
+
+.cen-skl-card:hover::before {
+    /* height: 30px; */
+    border-color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+
+
+.logos {
+    transition: .3s;
+    transform: rotate(0deg);
+    padding: 10px;
+}
+
+
+.cen-mor h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 10px 20px;
+}
+.skill-card-div {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 50px;
+    margin-top: 90px;
+    z-index: 0;
+}
+.cen-skl-card {
+    padding: 40px;
+    background:#111111;
+    text-align: center;
+    transition: .3s;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 3;
+    cursor: pointer;
+}
+.cen-skl-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    border-radius:20px;
+    transform: translateX(-100%);
+    z-index: -1;
+    
+}
+.cen-skl-card p:hover {
+        color: #111111;
+}
+.cen-skl-card:hover::before {
+    transform: translateX(0)
+}
+.cen-skl-card h1 {
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.cen-skl-card p {
+    color: white;
+    font-size: 1.6rem;
+   
+    
+}
+
+
+.logos {
+    padding: 20px 0;
+}
+
+@media screen and (max-width:1135px) {
+    .skill-card-div {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+
+@media screen and (max-width:774px) {
+    .skill-card-div {
+        grid-template-columns: repeat(1 , 1fr);
+    }
+}
+
+
+
+
+
+@media screen and (max-width:352px) {
+    .cen-mor h1 {
+        font-size: 4rem;
+        padding: 6px 20px;
+    }
+}
+
+

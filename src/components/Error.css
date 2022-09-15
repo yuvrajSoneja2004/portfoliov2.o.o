@@ -1,0 +1,16 @@
+.error {
+    font-size: 5.3rem;
+}
+
+.really {
+    font-size: 1.6rem;
+    padding: 10px 15px;
+    letter-spacing: 3px;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 556px) {
+    .error {
+        font-size: 3rem;
+    }
+}

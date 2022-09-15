@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+
+.center-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* transition: .6s; */
+}
+.center-nav.active {
+    background: #111111;
+    transition: .3s;
+}
+.navItems {
+    display: flex;
+    color: #FFFFFF;
+    font-size: 3.7rem;
+    list-style: none;
+    z-index: 2;
+    margin: 25px;
+}
+.links {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: .2s;
+    position: relative;
+    padding:  0 2.3rem;
+}
+
+
+.links:hover {
+    color: #ffffff6b;
+}
+
+.navB {
+    padding-top: 3rem;
+    position: relative;
+}
+
+.hamIcon {
+    color: white;
+}
+
+.ham {
+    display: none;
+}
+.mobileNav {
+    text-align: center;
+    display: none;
+    z-index: 999;
+   
+}
+.mobileNavItems {
+    list-style: none;
+    background: #111;
+}
+
+.mobileNavItems li {
+    font-size: 4rem;
+    padding: .6rem 0;
+}
+.links2 {
+    text-decoration: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: .2s;
+    position: relative;
+    padding:  0 2.3rem;
+    font-family: 'IBM Plex Serif', serif;
+}
+.links2:hover {
+    color: #ffffff6b;
+}
+
+
+/* RESPONSIVE CODE  */
+@media screen and (max-width:1025px) {
+    .links {
+        display: none;
+    }
+    .ham {
+        display: inline-block;
+    }
+    .mobileNav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        transition: .3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        
+
+    }
+    
+}
+
+@media screen and (max-width:664px) {
+    .logo {
+        width: 140px;
+    }
+}

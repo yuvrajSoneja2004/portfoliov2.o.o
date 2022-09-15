@@ -1,0 +1,18 @@
+.whole-tech {
+    background: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* * {
+    color: #FFFFFF;
+} */
+
+.cen-tech h1 {
+    font-weight: 900;
+    font-size: 6.6rem;
+    text-transform: uppercase;
+    margin: 55px 0;
+   
+}
