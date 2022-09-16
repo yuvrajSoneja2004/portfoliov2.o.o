@@ -31,7 +31,7 @@ function Skills({skillName , pName , desc , imgSrc , srcCode ,liveCode }) {
          
           
             <div className="topImgB" ></div>
-        <div className="skill-image" style={{background: `url(${imgSrc})` , backgroundPosition: 'center' , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover'}}></div>
+        <div className="skill-image" style={{background: `url(${imgSrc})` , backgroundPosition: 'left' , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover' , boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}></div>
         </div>
        
     </div>

@@ -45,6 +45,7 @@
 .logos {
     transition: .3s;
     transform: rotate(0deg);
+    filter: drop-shadow(4px 4px 2px black);
     padding: 10px;
 }
 

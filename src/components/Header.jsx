@@ -1,10 +1,15 @@
-import React from 'react'
-import './Header.css'
-import './cssBoiler.css'
-import Navbar from './Navbar'
-import Section from './Section'
+import React , {useEffect} from 'react';
+import './Header.css';
+import './cssBoiler.css';
+import Navbar from './Navbar';
+import Section from './Section';
 
 function Header() {
+
+useEffect(() => {
+  document.title = "Yuvraj's Portfolio";
+} , []);
+
   return (
     <div>
         <div className="whole" id='header-home'>
@@ -32,7 +37,7 @@ function Header() {
         </section>
 
     </div>
-  )
+  );
 }
 
-export default Header
+export default Header;

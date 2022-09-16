@@ -1,8 +1,13 @@
-import React from 'react'
+import React,  {useEffect} from 'react'
 import { NavLink } from 'react-router-dom';
 import './Error.css'
 import './cssBoiler.css'
 function Error() {
+
+useEffect(() => {
+  document.title = "404 Page Not Found."
+} , []);
+
   return (
     <div style={{
         width: '100%',

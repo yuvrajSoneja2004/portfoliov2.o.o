@@ -1,10 +1,11 @@
-import React from 'react'
-import './cssBoiler.css'
-import Skills from './Skills'
-import Tech from './Tech'
-import Pro1 from './assets/pro1.png'
-import Pro2 from './assets/pro2.png'
-import Pro3 from './assets/pro3.png'
+import React from 'react';
+import './cssBoiler.css';
+import Skills from './Skills';
+import Tech from './Tech';
+import Pro1 from './assets/pro1.png';
+import Pro2 from './assets/pro2.png';
+import Pro3 from './assets/pro3.png';
+import Pro4 from './assets/pro4.png';
 
 function SkillsSection() {
   return (
@@ -33,7 +34,15 @@ function SkillsSection() {
      desc='Lacks is a photo gallery webapp made with ReactJS and Bootstrap 5. It uses Pixabay API to load the data. It shows data like likes , views , downloads and also the tags related to image.'
      imgSrc={Pro3}
      srcCode='https://github.com/yuvrajSoneja2004/photo-gallery'
-     liveCode='https://fascinating-swan-60b1a6.netlify.app/'/>
+     liveCode='https://fascinating-swan-60b1a6.netlify.app/'/>  
+     
+     <Skills 
+     skillName='NodeJS' 
+     pName='FavouriteMoviesAPI, a restful api!' 
+     desc="FavouriteMovies API is a RESTful API which is connected to MongoDB Atlas. it contains data of all of my favourite shows with its details including their's posters. It is my first backend project which is made using node.js , express.js and also mongoose.js to connect node.js with cloud database."
+     imgSrc={Pro4}
+     srcCode='https://github.com/yuvrajSoneja2004/FavouriteMoviesAPI-main'
+     liveCode='https://important-elk-hat.cyclic.app/'/>
      <Tech />
      
     

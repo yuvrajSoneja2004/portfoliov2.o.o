@@ -21,7 +21,7 @@ function Section() {
        <Parallax translateY={[-10, 30]} >
        <div className="abt-me-txt-div"  data-aos="fade-up">
             <div className="empty"></div>
-            <p className="abt-me-txt">I'm a 12th commerce pass out. I've always been fond of computers,technology and the freedom it always gives an individual to create new things. At the age of 14 ,i started taking few computer courses and decided i wanted to create a career in this field. I've worked upon HTML,CSS , JavaScript and React.js which enabled me to create front-end websites. Currently i'm working upon Node.js and Express.js.</p>
+            <p className="abt-me-txt">I'm a 12th pass out. I've always been fond of computers,technology and the freedom it always gives an individual to create new things. At the age of 14 ,i started taking few computer courses and decided i wanted to create a career in this field. I've worked upon HTML,CSS , JavaScript and React.js which enabled me to create front-end websites. Currently i'm working upon Node.js and Express.js.</p>
         </div>
        </Parallax>
        <MorSkills />

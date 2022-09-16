@@ -7,7 +7,7 @@
 }
 
 .whole {
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     z-index: 3;
     position: relative;
@@ -19,9 +19,6 @@
 }
 /* https://images.pexels.com/photos/1480690/pexels-photo-1480690.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 */
 
-@media screen and (max-width: 901px) {
-    
-}
 
 
 
