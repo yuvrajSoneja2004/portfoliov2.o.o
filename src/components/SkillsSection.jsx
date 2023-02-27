@@ -6,11 +6,19 @@ import Pro1 from './assets/pro1.png';
 import Pro2 from './assets/pro2.png';
 import Pro3 from './assets/pro3.png';
 import Pro4 from './assets/pro4.png';
+import Pro5 from './assets/Pro5.png';
 
 function SkillsSection() {
   return (
    
     <>
+     <Skills 
+     skillName='MERN APP' 
+     pName='Zevon - a full stack ecommerce web application' 
+     desc='Zevon is an ecommerce web application built using the MERN stack, which includes MongoDB, Express, React, and Node.js. It provides a user-friendly interface for customers to browse and purchase products. '
+      imgSrc={Pro5}
+      srcCode='https://github.com/yuvrajSoneja2004/store'
+      liveCode='https://zevon-ecommerce.netlify.app/'/>
     <Skills 
      skillName='React JS' 
      pName='Weather Application made with ReactJS' 
