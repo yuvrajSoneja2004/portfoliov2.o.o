@@ -1,27 +1,46 @@
-import React from 'react'
-import { useState } from 'react'
-import './MorSkills.css'
+import React, { useState, useEffect, useRef } from "react";
+import "./MorSkills.css";
 
-export const SkillCard = ({logo , title , desc}) => {
+export const SkillCard = ({ logo, title, desc }) => {
+  const [isHovered, setIsHovered] = useState(false);
+  const cardRef = useRef(null);
 
- const [stylesCard, setStylesCard] = useState({
-  color: '#FFFFFF'
- })
+  // Handle the interactive glow effect
+  useEffect(() => {
+    if (!isHovered || !cardRef.current) return;
+
+    const handleMouseMove = (e) => {
+      const card = cardRef.current;
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+      card.style.setProperty("--x", `${x}%`);
+      card.style.setProperty("--y", `${y}%`);
+    };
+
+    document.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      document.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, [isHovered]);
 
   return (
-    <div>
-        
-        <div className="card-skl"  onMouseEnter={() => {
-          setStylesCard({color: '#111111'})
-        }} onMouseLeave={() => {
-          setStylesCard({color: '#FFFFFF'})
-        }}>
-            <div className="cen-skl-card">
-                <img src={logo} alt="Logo here" className='logos' width='200'/>
-                <h1 style={stylesCard}>{title}</h1>
-                <p style={stylesCard} >{desc}</p>
-            </div>
+    <div
+      ref={cardRef}
+      className={`skill-card ${isHovered ? "hovered" : ""}`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="skill-card-content">
+        <div className="skill-icon-wrapper">
+          <img src={logo} alt={`${title} logo`} className="skill-icon" />
         </div>
+        <h3 className="skill-title">{title}</h3>
+        <p className="skill-description">{desc}</p>
+      </div>
+      <div className="skill-card-glow"></div>
     </div>
-  )
-}
+  );
+};

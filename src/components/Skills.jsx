@@ -19,7 +19,7 @@ function Skills({skillName , pName , desc , imgSrc , srcCode ,liveCode }) {
         <h1 className='skill-desc'>{desc}</h1>
         <div className="btns-proj">
      <a href={srcCode} target='_blank'>   <button className='hover-b'> <i className="fa-solid fa-code icons"></i> source code</button></a>
-     <a href={liveCode} target='_blank'>   <button className='hover-b'> <i className="fa-solid fa-desktop icons"></i> view live</button></a>
+    {liveCode &&  <a href={liveCode} target='_blank'>   <button className='hover-b'> <i className="fa-solid fa-desktop icons"></i> view live</button></a>}
         </div>
     </div>
       </Parallax>
@@ -31,7 +31,7 @@ function Skills({skillName , pName , desc , imgSrc , srcCode ,liveCode }) {
          
           
             <div className="topImgB" ></div>
-        <div className="skill-image" style={{background: `url(${imgSrc})` , backgroundPosition: 'left' , backgroundRepeat: 'no-repeat' , backgroundSize: 'cover' , boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}></div>
+        <div className="skill-image" style={{background: `url(${imgSrc})` , backgroundPosition: 'center' , backgroundRepeat: 'no-repeat' , backgroundSize: 'contain' , boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px"}}></div>
         </div>
        
     </div>

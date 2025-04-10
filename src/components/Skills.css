@@ -110,8 +110,9 @@
     z-index: -1;
 }
 .skill-image {
-    width: 420px;
-    height: 600px;
+    width: 450px;
+    height: 350px;
+    /* Here  */
     /* background:url('./assets/pro1.png'); */
     background-position: center;
     background-repeat: no-repeat;

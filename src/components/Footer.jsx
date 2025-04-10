@@ -19,7 +19,7 @@ const Footer = () => {
     <div className="whole-footer" id='footer-sec' >
         <div className="footer-content"  data-aos="fade-up">
             <h1>Get in touch</h1>
-            <p>you can send me a message through the text box </p>
+            <p>Feel free to reach out by filling out the form below — I’ll get back to you as soon as possible.</p>
            <form onSubmit={(e) => {
             e.preventDefault();
             emailjs.sendForm('service_dei964e' , 'template_y0a6m1f', e.target , "cPij2C2-bTK8TzR8S").then((res) => {
@@ -53,8 +53,10 @@ const Footer = () => {
            </form>
            
             <div className="sm">
-            <a href="https://www.instagram.com/yuvraj_soneja/" target='_blank'><i className="fab fa-instagram smIcons" ></i></a>
+            <a href="https://www.linkedin.com/in/yuvrajsoneja/" target='_blank'><i className="fab fa-linkedin smIcons" ></i></a>
             <a href="https://github.com/yuvrajSoneja2004" target='_blank'><i className="fab fa-github smIcons" ></i></a>
+            <a href="https://www.instagram.com/yuvraj_soneja/" target='_blank'><i className="fab fa-instagram smIcons" ></i></a>
+            
          
              </div>
              {isLoading === false ? "" : <Loader />}

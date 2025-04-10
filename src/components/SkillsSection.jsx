@@ -13,44 +13,31 @@ function SkillsSection() {
    
     <>
      <Skills 
-     skillName='MERN APP' 
-     pName='Zevon - a full stack ecommerce web application' 
-     desc='Zevon is an ecommerce web application built using the MERN stack, which includes MongoDB, Express, React, and Node.js. It provides a user-friendly interface for customers to browse and purchase products. '
-      imgSrc={Pro5}
-      srcCode='https://github.com/yuvrajSoneja2004/store'
-      liveCode='https://zevon-ecommerce.netlify.app/'/>
-    <Skills 
-     skillName='React JS' 
-     pName='Weather Application made with ReactJS' 
-     desc='Weather app made with ReactJS with the help of OpenWeatherMap API. It shows the Temperature , Feel like temperature  and also the humidity. '
-      imgSrc={Pro1}
-      srcCode='https://github.com/yuvrajSoneja2004/LeeBakesSPA'
-      liveCode='https://yuvrajsoneja2004.github.io/weatherApp/'/>
-     
+        skillName='MERN + Google Sheets API' 
+        pName='BrewTrack – Coffee Inventory CMS' 
+        desc='A role-based inventory management CMS powered by Google Sheets API. Enables real-time sync, secure access with JWT, and cost tracking with seamless UI.'
+        imgSrc={Pro1}
+        srcCode='https://github.com/yuvrajSoneja2004/coffee'
+        liveCode='https://coffee-test-nu.vercel.app/' 
+      />
+
       <Skills 
-     skillName='React JS' 
-     pName='LeeBakes Single Page Website with React.JS' 
-     desc='LeeBakes is my project website made with ReactJS , its an SPA(Single Page Application). It has multiple routes and pages and also an 404 Page. I have also used a bit of bootstrap 5.'
-     imgSrc={Pro2}
-     srcCode='https://github.com/yuvrajSoneja2004/LeeBakesSPA'
-     liveCode='https://dreamy-cat-37461a.netlify.app/'
-     
-       /> 
-     <Skills 
-     skillName='Bootstrap 5' 
-     pName='Lacks , a Photo gallery webapp made using Pixabay API' 
-     desc='Lacks is a photo gallery webapp made with ReactJS and Bootstrap 5. It uses Pixabay API to load the data. It shows data like likes , views , downloads and also the tags related to image.'
-     imgSrc={Pro3}
-     srcCode='https://github.com/yuvrajSoneja2004/photo-gallery'
-     liveCode='https://fascinating-swan-60b1a6.netlify.app/'/>  
-     
-     <Skills 
-     skillName='NodeJS' 
-     pName='FavouriteMoviesAPI, a restful api!' 
-     desc="FavouriteMovies API is a RESTful API which is connected to MongoDB Atlas. it contains data of all of my favourite shows with its details including their's posters. It is my first backend project which is made using node.js , express.js and also mongoose.js to connect node.js with cloud database."
-     imgSrc={Pro4}
-     srcCode='https://github.com/yuvrajSoneja2004/FavouriteMoviesAPI-main'
-     liveCode='https://important-elk-hat.cyclic.app/'/>
+        skillName='Node.js + HLS + Docker' 
+        pName='JagStream – Video Streaming App' 
+        desc='A full-featured video platform with HLS streaming, live upload progress via SSE, and smart recommendations. Built using React , Node.js, PostgreSQL, FFmpeg, and Docker.'
+        imgSrc={Pro1}
+        srcCode='https://github.com/yuvrajSoneja2004/That-Video-Streaming-App'
+        // liveCode='https://jagstream.netlify.app/'
+      />
+
+      <Skills 
+        skillName='React + Socket.io' 
+        pName='Ask Wisdom – Social Community App' 
+        desc='A community-driven platform with Communities (like Reddit), media uploads, and post interactions. Built with Node.js , Socket.io, Multer, and a responsive React UI.'
+        imgSrc={Pro1}
+        srcCode='https://github.com/yuvrajSoneja2004/ask-wishdom'
+        liveCode='https://ask-wishdom-client.netlify.app/'
+      />
      <Tech />
      
     
