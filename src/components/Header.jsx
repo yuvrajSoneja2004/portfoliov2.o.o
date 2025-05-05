@@ -24,10 +24,21 @@ useEffect(() => {
               <div className="space"></div>
               <div className="space"></div>
               <div className="space"></div>
-            <div className="header-text"  data-aos="fade-left">
-            
-              <h1><span className='header-span'>HI</span>,ITS YUVRAJ!</h1>
-            </div>
+              <div className="header-text btns-proj" data-aos="fade-left">
+  <h1>
+    <span className="header-span">HI</span>, IT'S YUVRAJ!
+  </h1>
+  <button
+    className="hover-b"
+    onClick={() =>
+      window.location.href = "mailto:yuvrajdev20004@gmail.com"
+    }
+  >
+    <i className="fa-solid fa-paper-plane icons"></i> Contact Me!
+  </button>
+</div>
+           
+
             </div>
            
         </div>
